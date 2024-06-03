@@ -1,0 +1,15 @@
+[package]
+name = "quick-start"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-channel = { version = "2.3"}
+tokio = { version = "1", features = ["full"]}
+reqwest = { version = "0.12", features = ["json", "rustls-tls"], default-features = false}
+serde = { version = "1.0", features = ["derive"]}
+gtk = { version = "0.8.2", package = "gtk4" }
+
