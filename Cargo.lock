@@ -524,6 +524,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e5274423e17b7c9fc20b6e7e208532f9b19825d82dfd615708b70edd83df41f1"
 
 [[package]]
+name = "hdhomerun-client"
+version = "0.1.0"
+dependencies = [
+ "async-channel",
+ "gtk4",
+ "reqwest",
+ "serde",
+ "tokio",
+]
+
+[[package]]
 name = "heck"
 version = "0.5.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -873,17 +884,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "22244ce15aa966053a896d1accb3a6e68469b97c7f33f284b99f0d576879fc23"
 dependencies = [
  "unicode-ident",
-]
-
-[[package]]
-name = "quick-start"
-version = "0.1.0"
-dependencies = [
- "async-channel",
- "gtk4",
- "reqwest",
- "serde",
- "tokio",
 ]
 
 [[package]]

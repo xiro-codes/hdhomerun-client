@@ -44,11 +44,12 @@
       commonArgs = {
         inherit src;
         strictDeps = true;
-
+				nativeBuildInputs = [
+						pkgs.pkg-config
+				];
         buildInputs =
           [
             pkgs.gtk4
-						pkgs.pkg-config
             # Add additional build inputs here
           ]
           ++ lib.optionals pkgs.stdenv.isDarwin [
